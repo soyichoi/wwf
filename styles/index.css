@@ -33,3 +33,57 @@
 #wrap .intro h1 span:nth-child(1) {}
 #wrap .intro h1 span:nth-child(2) {}
 #wrap .intro .sponsor_btn {}
+/* ========================================================2행 퀴즈(m) */
+#wrap .quiz_bg {
+    background-image: url(../images/quiz_bg.png);
+    background-position: center; background-size: cover;
+    padding: 70px;
+}
+#wrap .quiz_bg .quiz {
+    display: flex;
+    flex-flow: column nowrap;/* t, d column -> row */
+    gap: 50px;
+}
+#wrap .quiz_bg .quiz .quiz_list > * {margin: 0 0 16px;}
+#wrap .quiz_bg .quiz .quiz_list {}
+#wrap .quiz_bg .quiz .quiz_list h1 {
+    font-size: 1.5rem; font-weight: 500;
+    letter-spacing: -0.01rem; line-height: 1.2; color: #fff;
+}
+#wrap .quiz_bg .quiz .quiz_list h2 {}
+#wrap .quiz_bg .quiz .quiz_list h2 span {
+    display: block; color: #fff; line-height: 1.7;
+}
+#wrap .quiz_bg .quiz .quiz_list h2 span:nth-child(1) {}
+#wrap .quiz_bg .quiz .quiz_list h2 span:nth-child(2) {}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm {margin: 0;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul {margin: 0 0 16px;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li {
+    margin: 0 0 16px; position: relative;
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li:hover::after {
+    content: ''; display: block; position: absolute; left: 0; bottom: -10px;
+    width: 100%; height: 2px; background: linear-gradient(90deg, #ff7300, transparent);
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li:hover label {color: #FE9300;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li:last-child {margin: 0;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li input {display: none;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li input:checked + label {
+    background-image: url(../images/chk_on.svg);
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label {
+    font-size: 0.88rem; color: #fff;
+    background-image: url(../images/chk_off.svg);
+    background-size: 16px; background-repeat: no-repeat;
+    padding-left: 47.75px; background-position: left center;
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm #answer_btn {
+    width: 100%; padding: 10px; color: #fff; line-height: 1.7; background-color: #000;
+    padding: 10px; border-radius: 50px; width: 100%; transition: background-color 0.3s;
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm #answer_btn:hover {background-color: #ff7300;}
+#wrap .quiz_bg .quiz_status {}
+#wrap .quiz_bg .quiz_status img {width: 100%;}
+#wrap .quiz_bg .quiz_status p {
+    font-size: 1.25rem; color: #fff; margin: 20px 0 0; line-height: 1.7;
+}

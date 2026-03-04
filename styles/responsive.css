@@ -1,5 +1,12 @@
 /* 반응형조건 responsive */
 /* mobile(320~) -> tablet(1024~) -> desktop(1250~) */
+@media screen and (min-width: 600px) {
+    /* ---------------------------------------------------2행 퀴즈 */
+    #wrap .quiz_bg .quiz {
+        flex-flow: row nowrap;/* t, d column -> row */
+    }
+    #wrap .quiz_bg .quiz > * {flex: 1;}/* 퀴즈+현황 비율 반반(1:1) */
+}
 @media screen and (min-width: 860px) {
     #wrap .intro {padding: 300px 0 100px;}
 }/* 860~1023 */
@@ -11,14 +18,31 @@
     #wrap .container .sponsor_btn {width: 238px; height: 60px;}
     #wrap .container .sponsor_btn em {font-size: 1.38rem;}
     #wrap .container .sponsor_btn::after {font-size: 1rem;}
-}/* 1024~ */
+    /* ---------------------------------------------------2행 퀴즈 */
+    #wrap .quiz_bg {padding: 150px 80px;}
+    #wrap .quiz_bg .quiz .quiz_list h1 {
+        font-size: 2.50rem; margin: 0 0 60px; text-align: center;
+    }
+    #wrap .quiz_bg .quiz .quiz_list h2 span {display: inline; font-size: 1.25rem;}
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li {margin: 0 0 30px;}
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li:last-child {margin: 0 0 40px;}
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label {
+        font-size: 1.25rem; background-size: 28px;
+    }
+    #wrap .quiz_bg .quiz_status p {text-align: right;}
+}/* 1024~1249 */
 @media screen and (min-width:1250px) {
     #wrap .intro {padding: 447px 0 100px;}
     #wrap .intro .logo {width: 47px; left: 61px; top: 53px;}
     #wrap .intro h1 span {font-size: 4.28rem;}
-#wrap .intro h1 span:nth-child(1) {font-weight: 400;}
-#wrap .intro h1 span:nth-child(2) {font-weight: 700;}
+    #wrap .intro h1 span:nth-child(1) {font-weight: 400;}
+    #wrap .intro h1 span:nth-child(2) {font-weight: 700;}
     #wrap .container .sponsor_btn {width: 409px; height: 71px;}
     #wrap .container .sponsor_btn em {font-size: 2.13rem;}
     #wrap .container .sponsor_btn::after {font-size: 2rem;}
-}
+    /* ---------------------------------------------------2행 퀴즈 */
+    #wrap .quiz_bg {padding: 150px 335px;}
+    #wrap .quiz_bg .quiz .quiz_list h1 {font-size: 3.44rem; margin: 0 0 45px;    }
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li {margin: 0 0 30px;}
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li:last-child {margin: 0 0 40px;}
+}/* 1250~ */

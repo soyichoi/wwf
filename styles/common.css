@@ -2,6 +2,7 @@
 #wrap {}
 #wrap * {transition: all 0.3s;}
 #wrap .container {min-width: 320px;}
+#wrap .container .contents {max-width: 1250px; margin: 0 auto;}
 /* mobile design - .sponsor_btn */
 #wrap .container .sponsor_btn {
     width: 164px; height: 41px; display: block; margin: 0 auto;
@@ -13,6 +14,7 @@
 }
 #wrap .container .sponsor_btn em {
     color: #fff; font-weight: 500;
+    font-family: 'Pretendard', sans-serif;/* 단독글꼴일경우 */
 }
 #wrap .container .sponsor_btn::after {
     content:'>'; display: block;
