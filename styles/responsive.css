@@ -9,6 +9,21 @@
 }
 @media screen and (min-width: 860px) {
     #wrap .intro {padding: 300px 0 100px;}
+    /* ---------------------------------------------------3행~6행 공통 */
+    #wrap .container {padding: 200px 80px;}
+    #wrap .container .contents h1 {font-size: 2.5rem; margin: 0 0 40px;}
+    #wrap .container .contents h1+p {font-size: 1.38rem; font-weight: 700; margin: 0 0 40px;}
+    /* ---------------------------------------------------3행 영상 */
+    #wrap .video_bg .video h1 {margin: 0 0 70px;}
+    #wrap .video_bg .video iframe {height: 484px;}
+    /* ---------------------------------------------------5행 인류재앙 */
+    #wrap .humanity_bg .humanity h1+p {font-size: 1rem; font-weight: 400;}
+    #wrap .humanity_bg .humanity .list {flex-flow: row nowrap;}
+    #wrap .humanity_bg .humanity .list li {flex: 1;}
+    #wrap .humanity_bg .humanity .list li dl {height: 320px;}
+    #wrap .humanity_bg .humanity .list li dl dt {font-size: 2.69rem;}
+    #wrap .humanity_bg .humanity .list li .txt {height: 250px;}
+    #wrap .humanity_bg .humanity .list li .txt p {font-size: 1rem;}
 }/* 860~1023 */
 @media screen and (min-width:680px) {
     #wrap .intro {padding: 410px 0 100px;}
@@ -30,6 +45,22 @@
         font-size: 1.25rem; background-size: 28px;
     }
     #wrap .quiz_bg .quiz_status p {text-align: right;}
+    /* ---------------------------------------------------8행 활동내역 */
+    #wrap .activity_bg .activity .details {
+    grid-template-areas:
+        'public nature'
+        'corporation nature';
+    grid-template-columns: 1fr 1fr;
+    }
+    #wrap .activity_bg .activity .details li {
+        position: relative; padding-bottom: 30px;
+    }
+    #wrap .activity_bg .activity .details li .txt {width: 60%;}
+    #wrap .activity_bg .activity .details li:last-child .txt {
+        position: absolute; left: 0; bottom: 30px;
+    }
+    #wrap .activity_bg .activity .details li .txt dt {font-size: 2.13rem; font-weight: 700;}
+    #wrap .activity_bg .activity .details li .txt dd {font-size: 1.25rem;}
 }/* 1024~1249 */
 @media screen and (min-width:1250px) {
     #wrap .intro {padding: 447px 0 100px;}
@@ -45,4 +76,13 @@
     #wrap .quiz_bg .quiz .quiz_list h1 {font-size: 3.44rem; margin: 0 0 45px;    }
     #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li {margin: 0 0 30px;}
     #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li:last-child {margin: 0 0 40px;}
+    /* ---------------------------------------------------3행~6행 공통 */
+    #wrap .container .contents h1 {font-size: 3.43rem; margin: 0 0 81px;}
+    #wrap .container .contents h1+p {font-size: 2.13rem; margin: 0 0 81px;}
+    /* ---------------------------------------------------3행 영상 */
+    #wrap .video_bg .video iframe {height: 600px;}
+    /* ---------------------------------------------------5행 인류재앙 */
+    #wrap .humanity_bg .humanity h1+p {font-size: 1.25rem;}
+    #wrap .humanity_bg .humanity .list li dl dt {font-size: 2.69rem;}
+    #wrap .humanity_bg .humanity .list li .txt p {font-size: 1.25rem;}
 }/* 1250~ */

@@ -1,8 +1,24 @@
 /* 공통 common.css */
 #wrap {}
 #wrap * {transition: all 0.3s;}
-#wrap .container {min-width: 320px;}
+#wrap .container {
+    min-width: 320px;
+    background-position: center; background-size: cover;
+    padding: 70px 15px;
+}
 #wrap .container .contents {max-width: 1250px; margin: 0 auto;}
+#wrap .container .contents h1 {
+    font-weight: 500; font-size: 1.38rem; line-height: 1.2;
+    margin: 0 0 40px;
+}
+#wrap .container .contents h1 .highlight {
+    color: #050505; background-color: #fff; font-weight: 500;
+    display: inline-block; padding: 2px;
+
+}
+#wrap .container .contents h1+p {
+    font-size: 0.81rem; line-height: 1.7; margin: 0 0 22px;
+}
 /* mobile design - .sponsor_btn */
 #wrap .container .sponsor_btn {
     width: 164px; height: 41px; display: block; margin: 0 auto;
