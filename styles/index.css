@@ -191,6 +191,7 @@
 }
 #wrap .activity_bg .activity .details li .txt {
     padding: 20px; background-color: rgba(0, 0, 0, 0.5);
+    
 }
 #wrap .activity_bg .activity .details li .txt * {color: #fff;}
 #wrap .activity_bg .activity .details li .txt dt {font-size: 1.38rem; margin: 0 0 18px;}
