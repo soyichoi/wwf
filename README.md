@@ -3,6 +3,7 @@
 * 26/03/03 `index.html` 1행 완성(반응형o)
 * 26/03/04 `index.html` 2행 완성(모바일기준)
 * 26/03/06 `index.html` 2~8행 완성(반응형o)
+* 26/03/09 `index.html` 9~10행 완성(반응형o)
 ## POINT
 ### 2행 퀴즈 영역 input 디자인
 * `<input type="radio">`

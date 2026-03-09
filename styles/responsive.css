@@ -61,6 +61,26 @@
     }
     #wrap .activity_bg .activity .details li .txt dt {font-size: 2.13rem; font-weight: 700;}
     #wrap .activity_bg .activity .details li .txt dd {font-size: 1.25rem;}
+    /* ---------------------------------------------------9행 선물정보 */
+    #wrap .gift_bg .gift {text-align: right;}
+    #wrap .gift_bg .gift .title {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    #wrap .gift_bg .gift .title h1 {margin: 0;}
+    #wrap .gift_bg .gift .gift_list {
+        grid-template-areas:
+            'sponser2 sponser3'
+            'sponser5 sponser5';
+        grid-template-columns: 1fr 1fr;
+        margin: 40px 0;
+        gap: 45px;
+    }
+    #wrap .gift_bg .gift .gift_list li .photo img {transform: translateY(0);}
+    #wrap .gift_bg .gift .gift_list li .photo {height: 300px;}
+    /* ---------------------------------------------------10행 안내 */
+    #wrap .payment_bg {padding: 100px 80px;}
 }/* 1024~1249 */
 @media screen and (min-width:1250px) {
     #wrap .intro {padding: 447px 0 100px;}
@@ -85,4 +105,19 @@
     #wrap .humanity_bg .humanity h1+p {font-size: 1.25rem;}
     #wrap .humanity_bg .humanity .list li dl dt {font-size: 2.69rem;}
     #wrap .humanity_bg .humanity .list li .txt p {font-size: 1.25rem;}
+    /* ---------------------------------------------------9행 선물정보 */
+    #wrap .gift_bg .gift {text-align: center;}
+    #wrap .gift_bg .gift .gift_list {
+        grid-template-areas: 
+        'sponser2 sponser3 sponser5';
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 70px 0;
+    }
+    #wrap .gift_bg .gift .gift_list li h2,
+    #wrap .gift_bg .gift .gift_list li h2+p {font-size: 1.13rem;}
+    #wrap .gift_bg .gift .info {font-size: 1.13rem;}
+    /* ---------------------------------------------------10행 안내 */
+    #wrap .payment_bg {padding: 100px 335px;}
+    #wrap .payment_bg .payment dl dt {font-size: 2.13rem;}
+    #wrap .payment_bg .payment dl dd {font-size: 1.25rem;}
 }/* 1250~ */
